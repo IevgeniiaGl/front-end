@@ -1389,8 +1389,8 @@ h6 {
 }
 
 .talk__image {
-  display: -ms-grid;
-  display: grid;
+/*   display: -ms-grid;
+  display: grid; */
 }
 
 .talk__image img {
