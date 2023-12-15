@@ -1,0 +1,42 @@
+//REM
+@function rem($px) {
+	$result: math.div($px, 16) + rem;
+	@return $result;
+}
+//EM
+@function em($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+
+%menu-link {
+	font-family: "Oswald";
+	font-weight: 600;
+	font-size: rem(14);
+	line-height: math.div(21, 14);
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-left: rem(11);
+	padding-right: rem(11);
+	padding-top: rem(7);
+	padding-bottom: rem(7);
+	position: relative;
+	display: inline-block;
+	&::after {
+		content: "";
+		height: rem(2);
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 0;
+		transition: width 0.3s;
+		background-color: $redColor;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+}
