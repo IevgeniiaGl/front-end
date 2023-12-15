@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20231215121930">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="img/logo/logo_white.svg" alt="logo">
+				</a>
+				<div class="header__navigation">
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="blog.html" class="menu__link active">Кто мы</a>
+								</li>
+								<li class="menu__item menu__item_parent">
+									<a href="#" class="menu__link">Продукция</a>
+									<div class="menu__sub-menu sub-menu">
+										<ul class="sub-menu__list">
+
+											<li class="sub-menu__item">
+												<a href="category.html" class="sub-menu__link">Полки для ванной</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Угловые полки</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Держатели для туалетной бумаги</a>
+											</li>
+
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Полотендержатели</a>
+											</li>
+
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Держатели для стакана</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item menu__item_parent">
+									<a href="#" class="menu__link">Услуги</a>
+									<div class="menu__sub-menu sub-menu">
+										<ul class="sub-menu__list">
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Digital Products</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">New Trend</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Graphic Arts</a>
+											</li>
+											<li class="sub-menu__item">
+												<a href="#" class="sub-menu__link">Web Design</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item">
+									<a href="contacts.html" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+
+				<div class="menu__action action-header">
+					<div class="action-header__phone phone-header" title="телефонный звонок">
+						<a href="tel:+37369000000" class="phone-header__link" role="button">
+							<div class="phone-header__icon _icon-phone"></div>
+							<div class="phone-header__number">+069 00 00 00</div>
+						</a>
+					</div>
+					<div class="action-header__cart cart-header ">
+						<a href="#" class="cart-header__link">
+							<div class="cart-header__icon _icon-shopping-cart"></div>
+							<div class="cart-header__value">0</div>
+						</a>
+					</div>
+
+					<select name="form[]" data-class-modif="lang">
+						<option value="1" selected>Ru</option>
+						<option value="2">Ro</option>
+						<option value="3">En</option>
+					</select>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+				</div>
+			</div>
+
+		</header>
+		<main class="page">
+
+
+
+			<section class="page__category category">
+				<div class="category__container">
+					<div class="category__bread-crumbs bread-crumbs">
+						<nav class="bread-crumbs__items">
+							<a href="" class="bread-crumbs__item">домой</a>
+							<a href="" class="bread-crumbs__item">продукция</a>
+							<a href="" class="bread-crumbs__item">полочки для ванной</a>
+						</nav>
+					</div>
+
+					<div class="category__header-block">
+						<h1 class="category__title h1-title">Полки для ванной</h1>
+						<div class="category__sorting">
+							<!-- <label for="sort">сортировать по</label> -->
+							<select name="form[]" data-class-modif="sort" id="sort">
+								<option value="1" selected>По Популярности</option>
+								<option value="2">По Цене от низк. до выс.</option>
+								<option value="3">По Цене от выс. до низк.</option>
+							</select>
+						</div>
+
+					</div>
+					<div class="category__items product-cards">
+						<div class="product-cards__item product-card">
+							<a href="#" class="product-card__image">
+								<picture><source srcset="img/products/pr_10.webp" type="image/webp"><img src="img/products/pr_10.jpg" alt=""></picture>
+							</a>
+							<div class="product-card__body">
+								<h3 class="product-card__title"> <a href="#" class="product-card__title-link" k>U-образная полка A- типа </a> </h3>
+								<select name="form[]" data-class-modif="prod" data-scroll="100">
+									<option value="1" selected>300 мм | 1000 MDL</option>
+									<option value="2">600 мм | 1200 MDL</option>
+									<option value="3">900 мм | 1500 MDL</option>
+									<option value="4">1200 мм | 1900 MDL</option>
+									<option value="5">1500 мм | 2600 MDL</option>
+								</select>
+
+								<div class="product-card__cart-block">
+
+									<div class="product-card__price price">
+										<div class="price__current-price">1000 <span>MDL</span></div>
+										<div class="price__old-price"></div>
+									</div>
+									<button class="product-card__icon-block">
+										<div class="product-card__icon  _icon-shopping-cart"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-cards__item product-card">
+							<a href="#" class="product-card__image">
+								<picture><source srcset="img/products/pr_01.webp" type="image/webp"><img src="img/products/pr_01.jpg" alt=""></picture>
+							</a>
+							<div class="product-card__body">
+								<h3 class="product-card__title"> <a href="#" class="product-card__title-link" k>Полотенцедержатель</a> </h3>
+								<select name="form[]" data-class-modif="prod" data-scroll="100">
+									<option value="1" selected> 328 мм | 1000 MDL</option>
+									<option value="2">600 мм | 1200 MDL</option>
+								</select>
+
+								<div class="product-card__cart-block">
+
+									<div class="product-card__price price">
+										<div class="price__current-price">1000 <span>MDL</span></div>
+										<div class="price__old-price"></div>
+									</div>
+									<button class="product-card__icon-block">
+										<div class="product-card__icon  _icon-shopping-cart"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-cards__item product-card">
+							<a href="#" class="product-card__image">
+								<picture><source srcset="img/products/pr_12.webp" type="image/webp"><img src="img/products/pr_12.jpg" alt=""></picture>
+							</a>
+							<div class="product-card__body">
+								<h3 class="product-card__title"> <a href="#" class="product-card__title-link" k>Держатель для стакана</a> </h3>
+
+								<div class="product-card__cart-block">
+
+									<div class="product-card__price price">
+										<div class="price__current-price">1000 <span>MDL</span></div>
+										<div class="price__old-price"></div>
+									</div>
+									<button class="product-card__icon-block">
+										<div class="product-card__icon  _icon-shopping-cart"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-cards__item product-card">
+							<a href="#" class="product-card__image">
+								<picture><source srcset="img/products/pr_13.webp" type="image/webp"><img src="img/products/pr_13.jpg" alt=""></picture>
+							</a>
+							<div class="product-card__body">
+								<h3 class="product-card__title"> <a href="#" class="product-card__title-link" k>Угловая полка в душ </a> </h3>
+
+								<div class="product-card__cart-block">
+
+									<div class="product-card__price price">
+										<div class="price__current-price">1000 <span>MDL</span></div>
+										<div class="price__old-price"></div>
+									</div>
+									<button class="product-card__icon-block">
+										<div class="product-card__icon  _icon-shopping-cart"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-cards__item product-card">
+							<a href="#" class="product-card__image">
+								<picture><source srcset="img/products/pr_14.webp" type="image/webp"><img src="img/products/pr_14.jpg" alt=""></picture>
+							</a>
+							<div class="product-card__body">
+								<h3 class="product-card__title"> <a href="#" class="product-card__title-link" k>U-образная полка A- типа </a> </h3>
+
+								<div class="product-card__cart-block">
+
+									<div class="product-card__price price">
+										<div class="price__current-price">1000 <span>MDL</span></div>
+										<div class="price__old-price"></div>
+									</div>
+									<button class="product-card__icon-block">
+										<div class="product-card__icon  _icon-shopping-cart"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-cards__item product-card">
+							<a href="#" class="product-card__image">
+								<picture><source srcset="img/products/pr_15.webp" type="image/webp"><img src="img/products/pr_15.jpg" alt=""></picture>
+							</a>
+							<div class="product-card__body">
+								<h3 class="product-card__title"> <a href="#" class="product-card__title-link" k>U-образная полка A- типа </a> </h3>
+
+								<div class="product-card__cart-block">
+
+									<div class="product-card__price price">
+										<div class="price__current-price">1000 <span>MDL</span></div>
+										<div class="price__old-price"></div>
+									</div>
+									<button class="product-card__icon-block">
+										<div class="product-card__icon  _icon-shopping-cart"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-cards__item product-card">
+							<a href="#" class="product-card__image">
+								<picture><source srcset="img/products/pr_16.webp" type="image/webp"><img src="img/products/pr_16.jpg" alt=""></picture>
+							</a>
+							<div class="product-card__body">
+								<h3 class="product-card__title"> <a href="#" class="product-card__title-link" k>U-образная полка A- типа </a> </h3>
+
+								<div class="product-card__cart-block">
+
+									<div class="product-card__price price">
+										<div class="price__current-price">1000 <span>MDL</span></div>
+										<div class="price__old-price"></div>
+									</div>
+									<button class="product-card__icon-block">
+										<div class="product-card__icon  _icon-shopping-cart"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="product-cards__item product-card">
+							<a href="#" class="product-card__image">
+								<picture><source srcset="img/products/pr_07.webp" type="image/webp"><img src="img/products/pr_07.jpg" alt=""></picture>
+							</a>
+							<div class="product-card__body">
+								<h3 class="product-card__title"> <a href="#" class="product-card__title-link" k>U-образная полка A- типа </a> </h3>
+
+								<div class="product-card__cart-block">
+
+									<div class="product-card__price price">
+										<div class="price__current-price">1000 <span>MDL</span></div>
+										<div class="price__old-price"></div>
+									</div>
+									<button class="product-card__icon-block">
+										<div class="product-card__icon  _icon-shopping-cart"></div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="category__button category-button">показать еще <span>+</span></a>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</main>
+		<div id="video" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup__text" data-youtube-place></div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<a class="footer__logo" href="#"><img src="img/logo/logo_dark.svg" alt=""></a>
+					<div class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Кто мы</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Продукция</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Услуги</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__social social-footer">
+						<ul class="social-footer__list">
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _icon-facebook-social"></a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" class="social-footer__link _icon-instagram-social"></a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="footer__copy copy-footer">
+					<div class="copy-footer__text">Создание сайта Punct Technology</div>
+					<div class="copy-footer__text">© 2023, All Rights Reserved</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20231215121930"></script>
+</body>
+
+</html>
