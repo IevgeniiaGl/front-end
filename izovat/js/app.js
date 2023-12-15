@@ -5033,12 +5033,8 @@
             }
             getScrollWatcherConfig(paramsWatch) {
                 let configWatcher = {};
-                if (document.querySelector(paramsWatch.root)) configWatcher.root = document.querySelector(paramsWatch.root); else if (paramsWatch.root !== "null") this.scrollWatcherLogging(`Эмм... батьківського об'єкта ${paramsWatch.root} немає на сторінці`);
+                if (document.querySelector(paramsWatch.root)) configWatcher.root = document.querySelector(paramsWatch.root);
                 configWatcher.rootMargin = paramsWatch.margin;
-                if (paramsWatch.margin.indexOf("px") < 0 && paramsWatch.margin.indexOf("%") < 0) {
-                    this.scrollWatcherLogging(`йой, налаштування data-watch-margin потрібно задавати в PX або %`);
-                    return;
-                }
                 if (paramsWatch.threshold === "prx") {
                     paramsWatch.threshold = [];
                     for (let i = 0; i <= 1; i += .005) paramsWatch.threshold.push(i);
@@ -5062,9 +5058,6 @@
             }
             scrollWatcherOff(targetElement, observer) {
                 observer.unobserve(targetElement);
-            }
-            scrollWatcherLogging(message) {
-                this.config.logging ? FLS(`[Спостерігач]: ${message}`) : null;
             }
             scrollWatcherCallback(entry, observer) {
                 const targetElement = entry.target;
@@ -6971,7 +6964,7 @@ PERFORMANCE OF THIS SOFTWARE.
         const group3 = document.querySelector(".group_3");
         if (group1, group2, group3) loadBlogItems();
         async function loadBlogItems() {
-            const response = await fetch("files/products.json", {
+            const response = await fetch("files/tst_2.json", {
                 method: "GET"
             });
             if (response.ok) {
