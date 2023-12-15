@@ -1358,9 +1358,13 @@ h6 {
 .talk__container {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .talk__content {
+  padding-top: 6.25rem;
   position: relative;
 }
 
@@ -1386,11 +1390,6 @@ h6 {
 
 .talk__done:not(:last-child) {
   margin-bottom: 1.875rem;
-}
-
-.talk__image {
-/*   display: -ms-grid;
-  display: grid; */
 }
 
 .talk__image img {
@@ -1557,33 +1556,11 @@ h6 {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .talk__image {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    bottom: 0;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    text-align: right;
-  }
-
-  .talk__image img {
-    -ms-grid-column-align: end;
-        justify-self: end;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
 }
 
 @media (min-width: 61.99875em) and (min-width: 91.25em) {
   .decor__item {
     width: 28.25rem;
-  }
-
-  .talk__image {
-    gap: 6.25rem;
   }
 }
 
@@ -1803,15 +1780,11 @@ h6 {
   }
 
   .talk__container {
-    gap: 6.25rem;
+    gap: 4.375rem;
   }
 
   .talk__content {
-    padding-top: 10.3125rem;
-  }
-
-  .talk__content {
-    padding-bottom: 7.8125rem;
+    padding-bottom: 6.25rem;
   }
 }
 
@@ -2017,10 +1990,6 @@ h6 {
 
   .talk__container {
     gap: 1.875rem;
-  }
-
-  .talk__content {
-    padding-top: 2.5rem;
   }
 
   .talk__content {
@@ -2874,39 +2843,27 @@ h6 {
     }
 }
 
-@supports (gap: clamp( 1.875rem , 0.6469298246rem  +  6.1403508772vw , 6.25rem )) {
+@supports (gap: clamp( 1.875rem , 1.173245614rem  +  3.5087719298vw , 4.375rem )) {
     .talk__container {
-      gap: clamp( 1.875rem , 0.6469298246rem  +  6.1403508772vw , 6.25rem );
+      gap: clamp( 1.875rem , 1.173245614rem  +  3.5087719298vw , 4.375rem );
     }
 }
 
-@supports not (gap: clamp( 1.875rem , 0.6469298246rem  +  6.1403508772vw , 6.25rem )) {
+@supports not (gap: clamp( 1.875rem , 1.173245614rem  +  3.5087719298vw , 4.375rem )) {
     .talk__container {
-      gap: calc(1.875rem + 4.375 * (100vw - 20rem) / 71.25);
+      gap: calc(1.875rem + 2.5 * (100vw - 20rem) / 71.25);
     }
 }
 
-@supports (padding-top: clamp( 2.5rem , 0.3070175439rem  +  10.9649122807vw , 10.3125rem )) {
+@supports (padding-bottom: clamp( 2.5rem , 1.4473684211rem  +  5.2631578947vw , 6.25rem )) {
     .talk__content {
-      padding-top: clamp( 2.5rem , 0.3070175439rem  +  10.9649122807vw , 10.3125rem );
+      padding-bottom: clamp( 2.5rem , 1.4473684211rem  +  5.2631578947vw , 6.25rem );
     }
 }
 
-@supports not (padding-top: clamp( 2.5rem , 0.3070175439rem  +  10.9649122807vw , 10.3125rem )) {
+@supports not (padding-bottom: clamp( 2.5rem , 1.4473684211rem  +  5.2631578947vw , 6.25rem )) {
     .talk__content {
-      padding-top: calc(2.5rem + 7.8125 * (100vw - 20rem) / 71.25);
-    }
-}
-
-@supports (padding-bottom: clamp( 2.5rem , 1.0087719298rem  +  7.4561403509vw , 7.8125rem )) {
-    .talk__content {
-      padding-bottom: clamp( 2.5rem , 1.0087719298rem  +  7.4561403509vw , 7.8125rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 2.5rem , 1.0087719298rem  +  7.4561403509vw , 7.8125rem )) {
-    .talk__content {
-      padding-bottom: calc(2.5rem + 5.3125 * (100vw - 20rem) / 71.25);
+      padding-bottom: calc(2.5rem + 3.75 * (100vw - 20rem) / 71.25);
     }
 }
 }
@@ -3020,26 +2977,6 @@ h6 {
 @media (min-width: 61.99875em) and (max-width: 61.99875em) {
   .decor__item {
     width: 12.5rem;
-  }
-}
-
-@media (min-width: 61.99875em) and (min-width: 20em) and (max-width: 91.25em) {
-@supports (gap: clamp( 1.875rem , 0.6469298246rem  +  6.1403508772vw , 6.25rem )) {
-    .talk__image {
-      gap: clamp( 1.875rem , 0.6469298246rem  +  6.1403508772vw , 6.25rem );
-    }
-}
-
-@supports not (gap: clamp( 1.875rem , 0.6469298246rem  +  6.1403508772vw , 6.25rem )) {
-    .talk__image {
-      gap: calc(1.875rem + 4.375 * (100vw - 20rem) / 71.25);
-    }
-}
-}
-
-@media (min-width: 61.99875em) and (max-width: 20em) {
-  .talk__image {
-    gap: 1.875rem;
   }
 }
 
