@@ -1388,6 +1388,11 @@ h6 {
   margin-bottom: 1.875rem;
 }
 
+.talk__image {
+  display: -ms-grid;
+  display: grid;
+}
+
 .talk__image img {
   max-width: 100%;
 }
@@ -1554,8 +1559,6 @@ h6 {
   }
 
   .talk__image {
-    display: -ms-grid;
-    display: grid;
     position: absolute;
     right: 0;
     width: 100%;
