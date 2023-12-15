@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="764px" height="765px" viewBox="0 0 764 765" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>years</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="years" transform="translate(0.000000, 32.000000)">
+            <path d="M604.333333,700.666667 C604.333333,642.333333 572.666667,642.333333 572.666667,584 C572.666667,525.666667 604.333333,525.666667 604.333333,467.333333 C604.333333,409 572.666667,409.333333 572.666667,351 C572.666667,292.666667 604.333333,292.666667 604.333333,234.333333 C604.333333,176 572.666667,176 572.666667,117.333333 C572.666667,58.6666667 604.333333,59 604.333333,0.666666667 L731.666667,0.666666667 L731.666667,700.666667 L604.333333,700.666667 Z" id="Path" stroke="#3C3C3C" stroke-width="63.6666667"></path>
+            <path d="M0,700.666667 L763.333333,700.666667" id="Path" stroke="#3C3C3C" stroke-width="63.6666667"></path>
+            <text id="50+" font-family="Oswald-SemiBold, Oswald" font-size="400" font-weight="500" line-spacing="505" letter-spacing="-22.8571434" fill="#FF0000">
+                <tspan x="-2.84217094e-14" y="564">50+</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
