@@ -101,7 +101,17 @@ overflow: clip;
     transition: background 0.5s ease 0s;
     display: inline-block;
     max-width: 143px;
+} 
+@media (max-width:360px){ 
+    .button {
+      
+        padding: 10px 10px;
+       
     }  
+} 
+
+
+
 
  .button:hover {
      background: #9f9f9f;
@@ -133,7 +143,7 @@ overflow: clip;
     display: flex;
     align-items: center;
     min-height: 125px;
-    column-gap: 35px;
+    column-gap: 10px;
 }
 .header__menu {
     flex: 1 1 auto;
@@ -187,18 +197,16 @@ overflow: clip;
 }
 
 .header__button {
-    flex: 0 0 auto; /* фиксируем размеры кнопки чтобы она не меняла свои размеры при адаптиве*/
+    flex: 0 0 auto; 
 }
 
 .header__actions{
     display: flex;
-    gap: 10px;
+    gap: 5px;
 
 }
 
-.button{
-    width:130px;
-}
+
 
 /* _________________BURGER__________________________ */
 
@@ -207,18 +215,12 @@ overflow: clip;
 }
 
 @media (max-width: 991.98px){
-    .header__container,
+ 
     .menu__list{
-        column-gap: 25px;
+        column-gap: 15px;
     }
     .header__container{
         min-height: 90px;
-    }
-   
-   
-    .header__container,
-    .menu__list{
-        column-gap: 15px;
     }
     .icon-menu{
         display: block;
@@ -654,7 +656,7 @@ overflow: clip;
 }
 .settings__items {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(388px,1fr));
+    grid-template-columns: repeat(3,1fr);
     row-gap: 30px;
 
 }
@@ -713,7 +715,7 @@ transform: scale(1.1);
     text-align:center;
     font-size: 13px;
     line-height: 1.08;
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -804,12 +806,19 @@ transform: scale(1.1);
 
 .whatwehave__text {
     margin-bottom: 20px;
+   
 }
 @media (max-width: 767.98px){
     .whatwehave__text {
        font-size: 14px;
     }  
  } 
+ @media (max-width: 300px){
+    .whatwehave__text {
+      max-width: 100px;
+      margin: 0 auto;
+    }  
+ }
 .whatwehavek__image {
     display: block;
     overflow: hidden;
@@ -857,7 +866,20 @@ transform: scale(1.1);
 }
 
 @media (max-width: 991.98px){
-
+    .settings__items {
+      
+        grid-template-columns: repeat(2,1fr);
+       
+    
+    } }
+    
+    @media (max-width:660px){
+        .settings__items {
+          
+            grid-template-columns: repeat(1,1fr);
+           
+        
+        }
 
     .info__items {
    
